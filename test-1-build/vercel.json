@@ -1,6 +1,7 @@
 {
   "functions": {
     "api/score.py": {
+      "runtime": "vercel-python@3.0.7",
       "maxDuration": 30
     }
   }

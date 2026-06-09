@@ -1,14 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "api/score.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/score.py": {
+      "maxDuration": 30
     }
-  ],
-  "routes": [
-    {
-      "src": "/api/score",
-      "dest": "/api/score.py"
-    }
-  ]
+  }
 }

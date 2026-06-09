@@ -1,8 +1,14 @@
 {
-  "functions": {
-    "api/score.py": {
-      "runtime": "vercel-python@3.0.7",
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "api/score.py",
+      "use": "@vercel/python"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/score",
+      "dest": "/api/score.py"
+    }
+  ]
 }
